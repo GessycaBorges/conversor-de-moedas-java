@@ -1,3 +1,5 @@
+package modelos;
+
 public enum Conversao {
 
     USD_ARS(1, "USD", "ARS"),
@@ -15,20 +17,20 @@ public enum Conversao {
 
     private int id;
     private String moedaInicial;
-    private String moedaConvertida;
+    private String moedaFinal;
 
     Conversao(int id, String moedaInicial, String moedaConvertida) {
         this.id = id;
         this.moedaInicial = moedaInicial;
-        this.moedaConvertida = moedaConvertida;
+        this.moedaFinal = moedaConvertida;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getMoedaConvertida() {
-        return moedaConvertida;
+    public String getMoedaFinal() {
+        return moedaFinal;
     }
 
     public String getMoedaInicial() {

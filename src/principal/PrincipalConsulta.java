@@ -1,12 +1,19 @@
+package principal;
+
+import acoes.ConversorDeMoedas;
+import modelos.Conversao;
+
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Principal {
+public class PrincipalConsulta {
     public static void main(String[] args) {
 
         int execucao = -1;
 
         Scanner scanner = new Scanner(System.in);
+        ConversorDeMoedas conversorDeMoedas = new ConversorDeMoedas();
+
         System.out.println("------------------------------------------------------");
         System.out.println("Bem vindo(a) ao conversor de moedas\n");
 
@@ -41,12 +48,11 @@ public class Principal {
                 System.out.println("Digite o valor que deseja converter: ");
                 double valor = scanner.nextDouble();
 
-                ConversorDeMoedas conversorDeMoedas = new ConversorDeMoedas();
                 try {
                     double resultado = conversorDeMoedas.converter(conversao, valor);
                     System.out.println("Resultado: " +
                             String.format("%.2f", valor) + " (" + conversao.getMoedaInicial() + ") = " +
-                            String.format("%.2f", resultado) + " (" + conversao.getMoedaConvertida() + ")");
+                            String.format("%.2f", resultado) + " (" + conversao.getMoedaFinal() + ")");
                 } catch (IOException | InterruptedException e) {
                     throw new RuntimeException(e.getMessage());
                 }
@@ -54,6 +60,9 @@ public class Principal {
 
             execucao = id;
         }
+
+        conversorDeMoedas.salvarHistorico();
+        System.out.println("Histórico de conversões salvo com sucesso");
 
     }
 }

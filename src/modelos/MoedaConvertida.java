@@ -1,3 +1,5 @@
+package modelos;
+
 import java.util.Map;
 
 public class MoedaConvertida {
