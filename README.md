@@ -54,9 +54,9 @@ Um conversor de moedas simples desenvolvido em Java que permite realizar convers
 
 - Ao executar PrincipalHistorico, o conteúdo do histórico de conversões será exibido no console.
 
-## Exemplo de Uso
+### Exemplo de Uso
 
-### 1. Realizando uma Conversão
+#### 1. Realizando uma Conversão
 
 - **Passo 1**: Execute o programa `PrincipalConsulta`
 - **Passo 2**: O menu de conversão será exibido:
@@ -74,22 +74,22 @@ O resultado da conversão será exibido:
 
 <img src="assets/finalizado.png">
 
-### 2. Visualizando o Histórico de Conversões
+#### 2. Visualizando o Histórico de Conversões
 
 - **Passo 1**: Execute o programa `PrincipalHistorico`
 - **Passo 2**: O histórico de conversões realizadas será exibido no console. Por exemplo:
 
 <img src="assets/historico.png">
 
-## Autora
+### Autora
 
 <a href="https://www.linkedin.com/in/gessycaborges/">
- <img style="border-radius: 20%;" src="https://avatars.githubusercontent.com/u/124705468?v=4" width="100px;" alt=""/><br />
+ <img src="https://avatars.githubusercontent.com/u/124705468?v=4" width="100px;" alt="Foto da autora Gessyca"/><br />
  <sub><a>Gessyca Borges</a></sub></a> <a href="https://www.linkedin.com/in/gessycaborges/" title="Gessyca"></a>
  <br />
 
  ---
 
-## Licença
+### Licença
 
 Este projeto é de código aberto e pode ser utilizado livremente, sob a licença MIT.
