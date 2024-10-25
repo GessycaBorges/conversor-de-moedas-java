@@ -61,8 +61,9 @@ public class PrincipalConsulta {
             execucao = id;
         }
 
+        System.out.println("Programa finalizado!");
         conversorDeMoedas.salvarHistorico();
-        System.out.println("Histórico de conversões salvo com sucesso");
+        System.out.println("Histórico de conversões salvo com sucesso!");
 
     }
 }

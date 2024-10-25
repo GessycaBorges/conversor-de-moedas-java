@@ -18,7 +18,7 @@ import java.util.List;
 
 public class ConversorDeMoedas {
 
-    private static final String API_KEY = "sua chave aqui";
+    private static final String API_KEY = "0addea1a5cfaf8bf517452e0";
     private static final String URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/";
 
     private final List<HistoricoDeConversao> historico = new ArrayList<>();
@@ -36,10 +36,12 @@ public class ConversorDeMoedas {
     public void carregarHistorico(){
         try (BufferedReader br = new BufferedReader(new FileReader("historico.txt"))) {
             String linha;
+            System.out.println("----------------------------------------------------------------");
+            System.out.println("Histórico de consultas realizadas: ");
             while ((linha = br.readLine()) != null){
                 System.out.println(linha);
             }
-
+            System.out.println("\n----------------------------------------------------------------");
         }catch (IOException e){
             System.out.println("Erro ao carregar historico");
         }
